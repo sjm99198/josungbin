@@ -1,7 +1,8 @@
-# Created by https://www.gitignore.io/api/web,java,eclipse
-# Edit at https://www.gitignore.io/?templates=web,java,eclipse
+# Created by https://www.gitignore.io/api/web,java,windows,eclipse
+# Edit at https://www.gitignore.io/?templates=web,java,windows,eclipse
 
 ### Eclipse ###
+.Servers
 .metadata
 bin/
 tmp/
@@ -99,13 +100,42 @@ hs_err_pid*
 *.asp
 *.cer
 *.csr
-*.css
+#*.css
 *.htm
-*.html
-*.js
-*.jsp
+#*.html
+#*.js
+#*.jsp
 *.php
 *.rss
 *.wasm
 *.wat
 *.xhtml
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/web,java,windows,eclipse201
