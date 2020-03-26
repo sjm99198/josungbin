@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css 속성</title>
+    <style>
+        body{
+        /*    background-image: url(star.jpg);*/
+            padding: 20px;
+            margin: 50px;
+        }
+        /*box size*/
+        #box1{
+            display: block; 
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            /*border속성*/
+            border-width: thin;/*px단위 사용가능*/
+            
+            /*선모양*/
+            border-style:solid;
+        
+            /*선샛*/
+            border-color: #DDDDDD;
+            /*border: 1px solid #DDDDDD;*/
+        
+            /*padding*/
+            /*padding: 30px;*/
+            padding: 50px 0px;
+           /* border-radius: 10px 20px 30px 40px;*/
+            border-radius: 50%;
+        }
+        img{
+            display: inline; 
+            border-radius: 50%;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+        
+        div.bg{
+            width: 80%;
+            height: 100px;
+            
+            background-image:url(star.jpg);
+        }
+         body {           
+             background-image: url(star.jpg);     
+             background-size: 100%;    
+             background-repeat: no-repeat;      
+             background-attachment: fixed; 
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="bg"></div>
+    
+    
+    
+<!--box속성-->
+<!--border-->
+    <div id="box1">text</div>
+    <img src="star.jpg" >
+    <span>StarWars</span>StarWars
+    <br>
+   
+    
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>레이아웃</title>
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+            }
+            #main_wrap{
+                width: 880px;
+                /*height: 900px;*/
+                padding: 20px;
+                background-color: white;
+                border: 1px solid #DDD;
+                margin: 10px auto;
+                box-shadow: 10px 10px 10px #AAA;
+                border-radius: 5px;
+            }
+            
+            body{
+                background-color: wheat
+            }
+           
+            /*헤드라이트*/
+            #header{
+                height: 100px;
+                margin: 20px;
+                color: green;
+/*                background-color: skyblue;*/
+            }
+            #header>h1.title{
+                margin-top: 20px;
+                text-shadow: 5px 5px 5px #505050;
+                color: black;
+/*                background-color:gold;*/
+            }
+            #header>h5.subtitle{
+/*                background-color: goldenrod;*/
+            }
+            
+            /*검색*/
+            #nav{
+                overflow: hidden;
+                
+                height: 35px;
+/*                 background-color:aqua;*/
+               border-top: 1px solid #CCC;
+                border-bottom: 1px solid #CCC;
+                
+            }
+            #nav>ul>li{
+                list-style: none;
+                width: 60px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                
+                float: left;
+            }
+            #nav>ul>li:hover{
+                background-color: black;
+                color:white
+            }
+            #nav>div{
+                float: right;
+                 vertical-align: middle;
+                height: 35px;
+               
+            }
+            #nav>div>input[type=text]{
+                border-radius: 10px 0px 0px 10px;
+                border: 1.5px solid #DDD;
+                height: 18px;
+                font-size: 18px;
+                padding-left: 15px;
+                margin-top: 7px;
+            }
+            #nav>div>input[type=button]{
+                padding: 0.5px 10px;
+                border: thin solid #DDD;
+                border-radius: 0 20px 20px 0;
+            
+            }
+            #content_wrap{
+                overflow: hidden;
+            }
+            #content{
+                height: 500px;
+                width: 650px;
+                 background-color:brown;
+                float: left;
+            }
+            #aside{
+                width: 250px;
+                height: 200px;
+                background-color: darkred;
+                float: right;
+            }
+            
+            #footer{
+                 height: 100px;
+                
+                color: green;
+                background-color: skyblue;
+                
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <!--메인 렙-->
+        <div id="main_wrap">
+            <!-- 헤더-->
+            <div id="header">
+             <h1 class=title>HTML5 Example Preview</h1>
+              <h5 class=subtitle>비트캠프</h5>
+              </div>
+            <!--네비-->
+            <div id="nav">
+               <ul>
+                    <li>HTML</li>
+                    <li>JAVA</li>
+                    <li>CSS</li>
+                
+                </ul>
+                
+                <div id="search">
+                    <input type="text"><input type="button" value="검색">
+                </div>
+              </div>
+            <!--컨텐츠-->
+            <div id="content_wrap">
+                
+                <!--컨텐츠:기사-->
+                <div id=content></div>
+                    <article>
+                        <h1>StarWors</h1>
+                        <h1>19-12-04</h1>
+                    </article>
+                
+                <div id=aside></div>
+              </div>
+            <!--푸터-->
+            <div id=footer></div>
+                
+        </div>
+    </body>
+</html>

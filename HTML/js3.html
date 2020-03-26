@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자바스크립트 이벤트처리</title>
+        <style>
+            
+            width: 100px;
+            height: 100px;
+            
+            background-color:black;
+            
+        
+        </style>
+        <script>
+        
+        
+        </script>        
+    </head>
+    
+    <body>
+     <h1 id="btn">클릭</h1>
+    </body>
+    <script>
+        //onload이벤트에 핸들러 등록
+    window.onload = function(){
+        var btn = document.getElementById('btn');
+        
+        btn.onclick = function(){
+            alert(btn.innerHTML);
+            btn.innerHTML += '#';
+        };
+        
+        
+    };
+    
+    
+    </script>
+</html>

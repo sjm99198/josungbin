@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+    <%@ page trimDirectiveWhitespaces="true" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<!--CDN 방식으로 jQuery 라이브러리를 로드-->
+        <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB8ND9bcKatUUkZbNbcf9oQnEXKKROec4s",
+    authDomain: "kitech-iot.firebaseapp.com",
+    databaseURL: "https://kitech-iot.firebaseio.com",
+    projectId: "kitech-iot",
+    storageBucket: "kitech-iot.appspot.com",
+    messagingSenderId: "38526941535",
+    appId: "1:38526941535:web:64799d8b08037816571eea",
+    measurementId: "G-C8Q58F2P0N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>

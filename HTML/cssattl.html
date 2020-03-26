@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>위치 속성</title>
+        <style>
+        /*박스의 기본속성*/
+            div.box{
+                width: 150px;
+                height: 150px;
+                
+                border: thin solid #000;
+                line-height: 150px;
+                text-align: center;
+                 /*위치속성*/
+                position: absolute;
+            }
+           
+            
+            
+            #b1{
+                background-color: red;
+                left:50px;
+                top: 50px;
+                 z-index: 100;
+            }
+            
+            #b2{
+                background-color: green;
+                top: 100px;
+                left: 100px;
+                 z-index: 50;
+            }
+            
+            #b3{
+                background-color: yellow;
+                left: 150px;
+                top: 150px;
+                 z-index: 1;
+            }
+            div.warp{
+                border: thin solid;
+                height: 200px;
+                    
+                /*절대좌표 적용된 하위 태그의 시작점 적용*/
+                position:relative;
+                
+                /*영역밖의 컨텐츠 노출에 대한 속성*/
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+ <body>
+     
+     <h1>header - 1</h1>
+     <div class="warp">
+    <div id="b1" class="box">box1</div>
+     <div id="b2" class="box">box2</div>
+     <div id="b3" class="box">box3</div>
+    </div>
+     <h1>header - 1</h1>
+    </body>
+
+</html>

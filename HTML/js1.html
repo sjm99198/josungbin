@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자바스크립트</title>
+      
+        <script>
+            
+       // alert('hi!');
+            
+            
+            /*변수선언
+              저장 공간 생성,타입은 정하지않는다.
+              변수에 데이터가 할당되기 전까지 unfined타입.
+            */
+            var num;
+            var uname;
+            var chk;
+            var func;
+            var obj;
+            var und;
+            
+            //타입확인
+            alert(typeof(num)=='number');
+            alert(typeof(uname)=='number');
+            alert(typeof(chk));
+            alert(typeof(func));
+            alert(typeof(obj));
+            alert(typeof(und));
+            
+            
+            if(typeof(num)=="number"){
+                
+            }else{
+                
+            }
+            
+            num=1;
+            uname='sss';
+            chk=true;
+            func=function(){
+                alert('function Srtanding');
+            
+                
+            };
+            obj={ //변수하고 메서드가 들어간다(함수)....
+                oNum:10,
+                oMethod:function(){
+                    alert('Stranding')
+                }
+            };
+            /*함수생성*/
+            function sayhello(){
+                alert('hello~~');
+            }
+            //매개변수를 통한 데이터 받기: 매개변수 선언
+            function add(n1,n2){
+                alert(n1+n2);
+            }
+            //함수의 데이터 반환
+            function add2(n3,n4){
+                return n3+n4;//retrun:1.함수의 종료,값의 반환
+                
+            }
+            
+            //함수호출
+            sayhello();
+            add(10,20);
+            
+            var num2= add2(50,100);
+            /*객체참조*/
+            obj.oMethod();
+            alert(obj.oNum);
+            
+            
+            
+            
+            
+            alert(num+':'+uname+':'+chk+':'+func+':'+obj+':'+und);
+        </script>
+    </head>
+    
+    <body>
+     <script>
+         
+        </script>
+    </body>
+</html>

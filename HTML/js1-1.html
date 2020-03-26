@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자바스크립트</title>
+      
+        <script>
+            
+       var html= '';
+            html +='<ul>'; //html= html+'<ul>'
+            html +='  <li>hello</li>';
+            html +='  <li>javascript</li>';
+            html +='</ul>';
+            
+            
+        alert('body tag 이전실행');
+            
+           window.onload=function(){
+               alert(document.body.innerHTML);
+               alert('화면 로딩 완료');
+           }
+            
+        </script>
+    </head>
+    
+    <body>
+        <h1>이곳이 h1 태그자리</h1>
+     <script>
+         document.body.innerHTML = html;
+        //  var str =document.body.innerHTML;
+          //  alert(str);
+        </script>
+    </body>
+</html>

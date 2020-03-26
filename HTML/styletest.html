@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> css선택자</title>
+        
+        <style>
+        
+            
+            /*    *{color: blue }
+
+        /태그선택*/
+            h1{color: brown;}
+            p{color: aqua;}
+            
+            h1,p{background-color: burlywood}
+            #header{color: crimson; background-color: aqua}
+            #contents{color:cornflowerblue} 
+            #footer{color:darkviolet}
+            /*클래스 선택자*/
+            .text_color{
+                background-color: aquamarine
+            }
+            .select{
+                font-style: italic;
+                font-size: 16px
+            }
+            
+            /*속성선택*/
+            input[type]{
+                color: crimson
+                    
+            }
+            input[type=text]{
+                background-color: cadetblue
+                    
+            }
+            
+            div.s1{
+                color: black
+            }
+            /*자손선택*/
+            div.box>h1{
+                background-color: black;
+                color: white;
+            }
+            /*후손선택*/
+            div.box h1{
+                font-style: oblique
+            }
+            
+            h1.se + h2{
+                color: darkorchid;
+            }
+            h1.se - h2.s2{
+                color:coral            }
+            div.click:hover {
+                background-color:chartreuse;
+               
+                
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <div class="click"></div>
+        <hr>
+        
+        
+        <h1 class="se">header - 1</h1>
+        <h2>header - 2</h2>
+        <h2>header - 2</h2>
+        <h2 class="s2">header - 1</h2>
+        <h2>header - 1</h2>
+        <h2>header - 1</h2>
+        
+        <div class="box">
+        <h1> h1-1</h1>
+            <h2></h2>
+                <ul>
+                <li>li-h1-1</li>
+                <li>li-h1-2</li>
+                <li>li-h1-3</li>
+                <li>li-h1-4</li>
+                </ul>
+        </div>
+        
+        <input type="text">
+        <input type="password">
+        <div id="header" clas="text_color">
+            <h3 class="select">header</h3>
+        </div>
+            
+        <div id=contents class="text_color">
+            <h3>contents</h3>
+        </div>
+        
+        <div id=footer class="text_color">
+        <h3>footer</h3>
+        </div>
+        
+        <h1>네이버 앱으로 국민연금 신청●납부한다.</h1>
+        <p>
+            여기서 가장 인지도가 높은 캐릭터는 바로 이 분이 아닐까 생각합니다.
+            앨런 웨이크는 게임 속 세계관 내에서도 이름을 떨치고 아주 유명한 작가로서, 자신의 이름을 딴 앨런 웨이크의 주인공으로 문과도 싸움을 잘한다는 걸 보여준 대표적인 인물이라고 할 수 있습니다.
+
+            앨런 웨이크가 성인이 되고서는 사진사 '앨리스 웨이크'와 결혼을 성공하는 동시에 작가들의 저작권을 담당하고 있는 자신의 절친인 '베리 뮐러'의 소개를 받고 한 티비 프로그램의 작가라는 직업의 첫 활동을 시작하게 됩니다.</p>
+        
+    </body>
+</html>

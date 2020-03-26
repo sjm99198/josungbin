@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>jQuery Basic4</title>
+        <style>
+             .h1{
+                width: 50%;
+                 margin: 50px;
+               background-color: red;
+                cursor: pointer;
+            }
+            
+            .mouseOver{
+                background-color: black ;
+                color: white;
+                
+            }
+        </style>
+        <!--CDN 방식으로 jQuery 라이브러리를 로드-->
+        <script
+                src="https://code.jquery.com/jquery-1.12.4.js"
+                integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+                crossorigin="anonymous"></script>
+        
+
+    </head>
+<body>
+     <h1 id='btn' class='btn'> click - 1</h1>
+     <h1 class='btn'> click - 2</h1>
+     <h1 class='btn'> click - 3</h1>
+
+    </body>
+<script>
+
+
+    $(document).ready(function(){
+        
+        $('h1.btn').on('click',function(e){
+            var strtext= $(this).text();
+            alert(strtext);
+            $(this).html(strtext+' + ');
+        });
+    
+        
+        $('h1#btn').on({
+            mouseenter :function(){
+                $(this).addClass('mouseOver');
+            },
+            mouseleave :function(){
+                $(this).removeClass('mouseOver');
+            }
+        });
+        
+        
+    });
+    
+    
+    
+      </script>
+
+
+
+
+</html>
